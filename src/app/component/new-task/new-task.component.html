@@ -1,0 +1,32 @@
+<!-- Add new tasks code  -->
+<div class="container">
+    <div>
+        <h1>Add task in the list, that you want to remember!</h1>
+    </div>
+
+    <!-- form -->
+    <div>
+        <form [formGroup]="addTaskForm" class="add-new-task">
+            <mat-form-field appearance="outline">
+                <mat-label>Task</mat-label>
+                <input type="text" formControlName="task" id="name" matInput placeholder="Enter your task">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-error *ngIf="checkError('task', 'required')">Task filed is required!</mat-error>
+                <mat-error *ngIf="checkError('task', 'minlength')">Please enter valid task!</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Choose a due date</mat-label>
+                <input type="text" formControlName="duedate" matInput [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error *ngIf="checkError('duedate', 'required')">Date filed is required!</mat-error>
+            </mat-form-field>
+        </form>
+    </div>
+    <div class="button-primary">
+        <button mat-raised-button color="primary" (click)="addTask()"
+            [disabled]="!addTaskForm.valid">{{actionBtn}}</button>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "taskList": [
+    {
+      "task": "Rushi",
+      "duedate": "2023-06-20T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "task": "Rushikesh Gaikwad",
+      "duedate": "2023-06-25T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "task": "rushikeshgaikwad238@gmail.com",
+      "duedate": "2023-06-29T18:30:00.000Z",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

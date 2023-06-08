@@ -1,0 +1,19 @@
+.add-new-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.button-primary {
+    margin-top: 1rem;
+}
+
+mat-form-field {
+    margin-bottom: 1rem;
+}
+
+mat-error {
+    margin: 0.5rem 0;
+}
+
