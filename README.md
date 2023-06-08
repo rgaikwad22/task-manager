@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Project Related Details
+
+Here are some details related to the project.
+To run the mock json server you need to run a command below.
+json-server --watch db.json 
+to download all thee necessary packages for the project run an command called
+npm install
+in terminal also you have to ender a command to run the local host on your machine
+ng serve
+I also deployed and added source code of this test project on github.
+GitHub link:   https://github.com/rgaikwad22/task-manager
+
